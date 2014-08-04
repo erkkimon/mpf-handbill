@@ -1,0 +1,206 @@
+/* Typography */
+
+@font-face {
+  font-family: 'Complete in Him';
+  src: url('fonts/CompleteInHimWithAumlAndOuml.eot'); /* IE9 Compat Modes */
+  src: url('fonts/CompleteInHimWithAumlAndOuml.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/CompleteInHimWithAumlAndOuml.woff') format('woff'), /* Modern Browsers */
+       url('fonts/CompleteInHimWithAumlAndOuml.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/CompleteInHimWithAumlAndOuml.svg#7749a4a7b2283c132e5f94a66225ca5d') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Champagne & Limousines';
+  src: url('fonts/champagne-limousines.eot'); /* IE9 Compat Modes */
+  src: url('fonts/champagne-limousines.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/champagne-limousines.woff') format('woff'), /* Modern Browsers */
+       url('fonts/champagne-limousines.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/champagne-limousines.svg#4e399d2ab94c45fe49fcd26d7ee0c800') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+html, body 
+{
+  height: 100%;
+  font-family: "Champagne & Limousines";
+  font-size: 16px;
+}
+
+.navbar-toggle 
+{
+  float: left;
+  margin-left: 15px;
+}
+
+.navmenu 
+{
+  z-index: 1;
+  width: 200px;
+}
+
+.canvas 
+{
+  position: relative;
+  left: 0;
+  z-index: 2;
+  min-height: 100%;
+  padding: 50px 0 0 0;
+  background: #fff;
+}
+
+/* vertical-centered text */
+.text-vcenter 
+{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+h1, h2, h3 
+{
+  font-family: "Complete in Him";
+}
+
+/* additional sections */
+#home 
+{
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#bg
+{ 
+  position: fixed; 
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: url("img/bg.jpg") top center no-repeat; z-index: -1;
+  length: 100%;
+}
+
+#services
+{
+  background: white;
+}
+
+#desktop-nav
+{
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  background: #FFF;
+  height: 50px;
+  margin-top: -50px;
+  z-index: 99;
+  opacity: 0.9;
+  padding: 0px;
+}
+
+
+#desktop-nav ul
+{
+  vertical-align: middle;
+  text-align: center;
+  line-height: 50px;
+}
+
+#desktop-nav li
+{
+  display: inline-block; 
+}
+
+.shadow
+{
+	-moz-box-shadow: 	0px 0px 12px 2px #000;
+	-webkit-box-shadow: 	0px 0px 12px 2px #000;
+	box-shadow: 		0px 0px 12px 2px #000;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000');
+}
+
+.tutor-img
+{
+  padding-top: 2em;
+}
+
+.likebutton-placeholder
+{
+  width: 100px; 
+  height: 20px; 
+  position: absolute; 
+  bottom: 14px; 
+  right: 0px;
+  opacity: 0.8;
+}
+
+.likebutton-placeholder iframe
+{
+  border: 0px;
+}
+
+.navmenu-default a, #desktop-nav a
+{
+  cursor: pointer;
+}
+
+@media (min-width: 0) 
+{
+  .navbar-toggle 
+  {
+    display: block; /* force showing the toggle */
+  }
+  #desktop-nav
+  {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) 
+{
+  body 
+  {
+    padding: 0;
+  }
+  .navbar 
+  {
+/* 
+    right: auto;
+    background: none;
+    border: none;
+ */
+    display: none;
+  }
+  .canvas 
+  {
+    padding: 0;
+  }
+  #desktop-nav
+  {
+    display: block; /* force showing the navi */
+  }
+}
+
+@media (max-width: 768px) 
+{
+  #home
+  {
+    height: 50px;
+    background: #FFF;
+  }
+  
+  .tutor-img
+  {
+    padding-top: 0em;
+    padding-bottom: 12px;
+  }
+
+}
