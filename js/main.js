@@ -45,15 +45,7 @@ $(window).scroll(function()
 
 $(document).ready(function()
 {
-   // Load desired Facebook like button dynamically
-   dynamicLikeButtonSwitcher("https://www.facebook.com/personaltravis");
-   
-   // Blink Facebook like button
-   setInterval(function()
-   {
-     $(".likebutton-placeholder").animate({ "opacity": "0.2" }, "slow" );
-     $(".likebutton-placeholder").animate({ "opacity": "1.0" }, "slow" );
-   }, 15000);
+
 });
 
 //////////////

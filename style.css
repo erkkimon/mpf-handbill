@@ -24,6 +24,19 @@
   font-weight:  400;
 }
 
+@font-face {
+  font-family: 'Champagne & Limousines Bold';
+  src: url('fonts/champagne-limousines-bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/champagne-limousines-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/champagne-limousines-bold.woff') format('woff'), /* Modern Browsers */
+       url('fonts/champagne-limousines-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/champagne-limousines-bold.svg#11beacaaa2127113219203201faec525') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+
 html, body 
 {
   height: 100%;
@@ -66,6 +79,11 @@ h1, h2, h3
   font-family: "Complete in Him";
 }
 
+b
+{
+  font-family: "Champagne & Limousines Bold";
+}
+
 /* additional sections */
 #home 
 {
@@ -83,8 +101,8 @@ h1, h2, h3
 { 
   position: fixed; 
   left: 0; top: 0; right: 0; bottom: 0;
-  background: url("img/bg.jpg") top center no-repeat; z-index: -1;
-  length: 100%;
+  background: url("img/bg.png") top center no-repeat; z-index: -1;
+  background-size: cover;
 }
 
 #services
@@ -202,5 +220,18 @@ h1, h2, h3
     padding-top: 0em;
     padding-bottom: 12px;
   }
+  
+  #bg
+  {
+    display: none;
+  }
 
+}
+
+@media (min-width: 769px) 
+{
+  #bg
+  {
+    display: block;
+  }
 }
