@@ -1,24 +1,30 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="fi.mpf.kasiohjelma" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>MPF-käsiohjelma</name>
-    <description>
-        MPF-megapiknikin käsiohjelma. 
-    </description>
-    <author email="tom@himanen.info" href="http://himanen.info">
-    	Tom Himanen  
-    </author>
-    <content src="index.html" />
-    <access origin="*" />
-    <preference name="webviewbounce" value="false" />
-    <preference name="UIWebViewBounce" value="false" />
-    <preference name="DisallowOverscroll" value="true" />
+<?xml version="1.0" encoding="UTF-8"?>
 
-    <!-- Don't store local date in an iCloud backup. Turn this to "cloud" to enable storage 
-         to be sent to iCloud. Note: enabling this could result in Apple rejecting your app.
-    -->
-    <preference name="BackupWebStorage" value="none" />
+<widget xmlns      = "http://www.w3.org/ns/widgets"
+        xmlns:gap  = "http://phonegap.com/ns/1.0"
+        id         = "fi.mpf.app"
+        version    = "0.1.1">
 
-    <feature name="StatusBar">
-      <param name="ios-package" value="CDVStatusBar" onload="true" />
-    </feature>
+  <name>MPF-käsiohjelma</name>
+
+  <description>
+    MPF-megapiknikin käsiohjelma.
+  </description>
+
+  <author href="http://himanen.info" email="tom@himanen.info">
+    Tom Himanen
+  </author>
+
+  <icon src="img/icon.png" gap:role="default" />
+
+  <gap:platforms>
+    <gap:platform name="android" minVersion="2.1" />
+  </gap:platforms>
+
+  <gap:splash src="img/splash.9.png" />
+
+  <preference name="phonegap-version" value="3.1.0" />
+
+  <preference name="orientation" value="portrait" />
+
 </widget>
